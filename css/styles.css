@@ -1,0 +1,212 @@
+:root {
+    --primery-white-color: #ffffff;
+    --background-hero: #2F303A;
+    --background-team: #F5F4FA;
+    --background-specialisations: #E5E5E5;
+    --background-footer: #2F303A;
+    --background-portfolio: #F5F4FA;
+    --blue-color: #2196F3;
+    --font-black: #212121;
+    --font-grey: #757575;
+    --font-white: #FFFFFF;
+}
+
+body {
+    color: var(--font-black);
+    background-color: var(--primery-white-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+
+/* Стили для странички index.html */
+
+.logo {
+    color: var(--font-black);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.logo .blue {
+    color: var(--blue-color);
+}
+
+.logo .white {
+    color: var(--font-white);
+}
+
+.list {
+    list-style: none;
+}
+
+.site-nav .link {
+    color: var(--font-black);
+    text-decoration: none;
+}
+
+.site-nav .link.current {
+    color: var(--blue-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--blue-color);
+}
+
+.pages,
+.contacts-head {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contacts .contacts-now {
+    color: var(--font-grey);
+    text-decoration: none;
+}
+
+.contacts .current {
+    color: var(--blue-color);
+}
+
+.contacts .contacts-now:hover,
+.contacts .contacts-now:focus {
+    color: var(--blue-color);
+}
+
+.hero {
+    background-color: var(--background-hero);
+    letter-spacing: 0.06em;
+}
+
+.hero .hero-title {
+    color: var(--font-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* ВЕРНУТЬСЯ К КНОПКЕ */
+
+.hero .hero-button {
+    color: var(--font-white);
+    background-color: var(--blue-color);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.8;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.features .features-subtitle {
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features .features-description {
+    color: var(--font-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.specialisations {
+    background-color: var(--background-specialisations);
+}
+
+.specialisations .specialisations-title,
+.team .team-title {
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.team {
+    background-color: var(--background-team);
+}
+
+.team .team-name {
+    color: var(--font-black);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team .team-prof {
+    color: var(--font-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.footer {
+    background-color: var(--background-footer);
+}
+
+.contacts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+}
+
+.contacts .contacts-address {
+    color: var(--font-white);
+}
+
+.contacts .contacts-email,
+.contacts .contacts-phone {
+    color: var(--font-grey);
+    text-decoration: none;
+}
+
+
+/* Стили для странички portfolio.html */
+
+.buttons .buttons-link {
+    color: var(--font-black);
+    background-color: var(--background-portfolio);
+    font-family: inherit;
+}
+
+.buttons .buttons-link:hover,
+.buttons .buttons-link:focus {
+    color: var(--font-white);
+}
+
+.buttons .buttons-link:hover,
+.buttons .buttons-link:focus {
+    background-color: var(--blue-color);
+}
+
+.works .works-subtitle {
+    color: var(--font-black);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.works .works-type {
+    color: var(--font-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.works .works-link {
+    text-decoration: none;
+}
