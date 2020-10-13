@@ -21,6 +21,19 @@ body {
 
 /* Стили для странички index.html */
 
+.container {
+    margin: 0 auto;
+    width: 1600px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container-width {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
 .logo {
     color: var(--font-black);
     font-family: Raleway;
@@ -40,6 +53,8 @@ body {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav .link {
@@ -78,23 +93,30 @@ body {
 }
 
 .hero {
-    background-color: var(--background-hero);
     letter-spacing: 0.06em;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero .hero-title {
+    margin-top: 0;
+    margin-bottom: 30px;
     color: var(--font-white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     text-transform: uppercase;
+    background-color: var(--background-hero);
 }
 
 
 /* ВЕРНУТЬСЯ К КНОПКЕ */
 
 .hero .hero-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
     color: var(--font-white);
     background-color: var(--blue-color);
     font-family: inherit;
@@ -104,6 +126,18 @@ body {
     align-items: center;
     text-align: center;
     text-decoration: none;
+    border: 1px solid transparent;
+    width: 200px;
+    height: 50px;
+}
+
+.features-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-title {
+    margin-top: 0;
 }
 
 .features .features-subtitle {
@@ -112,6 +146,8 @@ body {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .features .features-description {
@@ -119,10 +155,28 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+    /* margin-bottom: 94px; */
+    margin-top: 0;
 }
 
 .specialisations {
     background-color: var(--background-specialisations);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.specialisations-img {
+    /* margin-bottom: 94px; */
+}
+
+.specialisations-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.team .team-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .specialisations .specialisations-title,
@@ -134,8 +188,14 @@ body {
     text-align: center;
 }
 
+.team-img {
+    margin-bottom: 30px;
+}
+
 .team {
     background-color: var(--background-team);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team .team-name {
@@ -143,6 +203,8 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .team .team-prof {
@@ -150,10 +212,17 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .footer {
     background-color: var(--background-footer);
+}
+
+.footer-logo {
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .contacts {
@@ -161,6 +230,21 @@ body {
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
+}
+
+.contacts-city {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-email {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.footer-phone {
+    margin-top: 0;
+    padding-bottom: 60px;
 }
 
 .contacts .contacts-address {
@@ -175,6 +259,18 @@ body {
 
 
 /* Стили для странички portfolio.html */
+
+.buttons {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    min-width: 84px;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    border-radius: 4px;
+}
 
 .buttons .buttons-link {
     color: var(--font-black);
@@ -192,12 +288,34 @@ body {
     background-color: var(--blue-color);
 }
 
+.buttons .first-button,
+.buttons .second-button,
+.buttons .third-button,
+.buttons .fourth-button,
+.buttons .fifth-button {
+    display: inline-block;
+    padding: 6px 22px;
+    text-decoration: none;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+.works .works-title {
+    margin-top: 0;
+}
+
+.works-link .container-works {
+    margin-bottom: 20px;
+}
+
 .works .works-subtitle {
     color: var(--font-black);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 0;
+    margin-bottom: 4px;
 }
 
 .works .works-type {
@@ -205,6 +323,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .works .works-link {
