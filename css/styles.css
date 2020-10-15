@@ -42,9 +42,10 @@ body {
 }
 
 .container {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -327,6 +328,10 @@ body {
     text-decoration: none;
 }
 
+.no-margin {
+    margin-top: 0;
+}
+
 
 /*======== Стили для странички portfolio.html =========*/
 
@@ -396,7 +401,7 @@ body {
 /* Стили для портфолио */
 
 .works {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 .works-card {
@@ -461,6 +466,8 @@ body {
 
 .works .works-link {
     text-decoration: none;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card-content {
