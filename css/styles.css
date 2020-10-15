@@ -16,6 +16,7 @@ body {
     background-color: var(--primery-white-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    margin: 0;
 }
 
 
@@ -36,12 +37,16 @@ body {
     justify-content: space-around;
 }
 
+.hidden {
+    display: none;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .logo {
@@ -115,6 +120,15 @@ body {
 .contacts-first .contacts-now:hover,
 .contacts-first .contacts-now:focus {
     color: var(--blue-color);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    top: 80px;
+    border: 1px solid #ECECEC;
 }
 
 .hero {
@@ -284,16 +298,13 @@ body {
     flex-direction: column;
 }
 
-.footer-logo {
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
 .contacts {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
 }
 
 .contacts-city,
@@ -304,7 +315,6 @@ body {
 
 .footer-phone {
     margin-top: 0;
-    padding-bottom: 60px;
 }
 
 .contacts .contacts-address {
@@ -385,10 +395,14 @@ body {
 
 /* Стили для портфолио */
 
+.works {
+    margin-bottom: 94px;
+}
+
 .works-card {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .works-card-elem {
@@ -405,9 +419,10 @@ body {
 
 /* Три последних элемента с margin-bottom */
 
-.works-card-elem:nth-last-child(-n + 3) {
+
+/* .works-card-elem:nth-last-child(-n + 3) {
     margin-bottom: 94px;
-}
+} */
 
 
 /* Все кроме 3,6,9 имеют margin справа */
@@ -420,8 +435,9 @@ body {
     margin-top: 0;
 }
 
-.works-link .container-works {
-    margin-bottom: 20px;
+.container-works {
+    display: block;
+    /* margin-bottom: 0; */
 }
 
 .works .works-subtitle {
@@ -445,4 +461,18 @@ body {
 
 .works .works-link {
     text-decoration: none;
+}
+
+.card-content {
+    /* width: calc((100% - 60px) / 3); */
+    /* width: 370px; */
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
